@@ -36,6 +36,7 @@ p{
 }
 #fire:hover{
     transform: rotateY(45deg);
+    
     transition: transform 0.2s;
     
 }
