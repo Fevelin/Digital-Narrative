@@ -11,22 +11,22 @@
 // point.style.top = (200 - y) + 'px';
 // var points = document.getElementById('point');
 
-function ellipse(x) {
-  // (x/2)^2 + y^2 = 100^2
-  var ySquare = 10000 - (x / 2) * (x / 2)
-  ySquare = Math.abs(ySquare)
-  return Math.sqrt(ySquare)
-}
+// function ellipse(x) {
+//   // (x/2)^2 + y^2 = 100^2
+//   var ySquare = 10000 - (x / 2) * (x / 2)
+//   ySquare = Math.abs(ySquare)
+//   return Math.sqrt(ySquare)
+// }
 
-$(document).ready(function(){
-  $(".point").each(function(index) {
-    var x = 200 * (13 * index / 10 - 1)
-    var y = ellipse(x)
+// $(document).ready(function(){
+//   $(".point").each(function(index) {
+//     var x = 200 * (8 * index / 18 - 1)
+//     var y = ellipse(x)
   
-    $(this).css('left', (x + 200) + 'px')
-    $(this).css('top', (500 - y) + 'px')
-  })
-})
+//     $(this).css('left', (x + 200) + 'px')
+//     $(this).css('top', (100 - y) + 'px')
+//   })
+// })
 
 
   // context.beginPath();
@@ -40,19 +40,22 @@ $(document).ready(function(){
 
   // //
 
-  // function arc(x) {
-  //   var ySquare = 10000 - (x ) * (x )
-  //   ySquare = Math.abs(ySquare)
-  //   return Math.sqrt(ySquare)
-  // }
+  function arc(x) {
+    var ySquare = 10000 - (x ) * (x )
+    ySquare = Math.abs(ySquare)
+    return Math.sqrt(ySquare)
+  }
 
-  // $(".point").each(function(index) {
-  //   var x = 50 * (6 * index / 10 - 1)
-  //   var y = arc(x)
-    
-  //   $(this).css('left', (x + 200) + 'px')
-  //   $(this).css('top', (200 - y) + 'px')
-  // })
+  $(document).ready(function(){
+    $(".point").each(function(index) {
+      var x = 200 * (10 * index / 12 - 2)
+      var y = arc(x)
+      
+      $(this).css('left', (x + 550) + 'px')
+      $(this).css('top', ( 500 - y) + 'px')
+    })
+  })
+  
 
 
   // var canvas = document.getElementById('myCanvas');
