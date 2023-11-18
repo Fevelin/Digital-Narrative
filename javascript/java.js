@@ -1,6 +1,14 @@
 // // how to position images making an arc in html and css
 
+const button = document.getElementById("small-container");
 
+// button.onclick = function () {
+//   if (audio.paused) {
+//       audio.play();
+//   } else {
+//       audio.pause();
+//   }
+// };
 
 // for (var i = 0; i < points.length; i++) {
 //   var point = points[i];
@@ -51,12 +59,11 @@
       var x = 200 * (10 * index / 12 - 2)
       var y = arc(x)
       
-      $(this).css('left', (x + 550) + 'px')
-      $(this).css('top', ( 500 - y) + 'px')
+      $(this).css('left', (x + 800) + 'px')
+      $(this).css('top', (500 - y) + 'px')
     })
   })
-  
-
+   
 
   // var canvas = document.getElementById('myCanvas');
 //   var context = canvas.getContext('2d');
@@ -82,3 +89,8 @@
 //   var startAngle = 8 * Math.PI;
 //   var endAngle =2.3 * Math.PI;
 //   var counterClockwise = false;
+
+
+
+
+
