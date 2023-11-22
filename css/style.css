@@ -1,4 +1,5 @@
 
+/* use wildcard to remove the margin and padding inside the elements  */
 *{
   margin: 0;
   padding: 0;
@@ -21,6 +22,7 @@
   height: 500px;
   padding: 10px;
   border-radius: 50px;
+   
 }
 
 #bg {
@@ -35,8 +37,11 @@ h1{
   align-items: center;
   justify-content: center;
   display: flex;
+  /* create linear gradient on the header  */
   background: -webkit-linear-gradient( #FFC300 , #f1ece3);
+  /* the color fit on the text  */
   -webkit-background-clip: text;
+  /* To show the line gradient trought the text  */
   -webkit-text-fill-color: transparent;
 }
 h2{
@@ -49,6 +54,7 @@ h2{
 
 }
 
+/* When you hover on a card make a gold color around the card  */
 .point:hover {
   box-shadow: 0 0 14px 14px rgb(245, 205, 3);
 }
@@ -60,6 +66,7 @@ h2{
   cursor: pointer;
   position: fixed;
 } 
+
 button{
   border-radius: 50px;
   position: fixed;

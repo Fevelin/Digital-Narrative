@@ -31,14 +31,19 @@ p{
 #main-image{
     width: 40vw;
     height: auto;
-    left: 200px;
-    position: absolute;
+    left: 800px;
+    bottom: 300px;
+    position: relative;
+    display: flex;
+    float: right;
+    text-align: right;  
 
 }
 #image-container{
     position: relative;
     
 }
+
 footer{
     font-size: 50px;
     width: 50%;
@@ -58,4 +63,40 @@ footer{
 footer:hover{
     background-color: rgb(121, 119, 103);
     cursor: pointer;
+}
+#playPauseButton {
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+  } 
+  
+  button{
+    border-radius: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  /* To make it responsive for computer screens, tablets, smart-phones etc. */
+@media screen and (max-width:900px) {
+    .column{
+        min-width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .column{
+        min-width: 100%;
+    }
+    .row{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    p{
+        font-size: 1.4rem;
+    }
 }

@@ -47,6 +47,7 @@ p{
     top:400px;
     background: rgb(237, 234, 213); 
     border-radius: 50%;
+    /* to create the line gradient  */
     box-shadow: 0 0 20px rgb(155, 3, 3),  
                 0 0 40px rgb(227, 51, 7),  
                 0 0 60px rgb(255, 123, 0),  
@@ -60,6 +61,7 @@ p{
 #explosion:hover { 
     opacity: 0.8;
     border-radius: 0.5;
+    /* when the mouse hover over it to show the line gradient  */
     box-shadow: 0 0 0 250px rgb(187, 5, 5),  
                 0 0 0 350px rgb(217, 17, 6), 
                 0 0 0 400px rgb(255, 132, 0), 
@@ -68,4 +70,39 @@ p{
                 0 0 0 550px rgb(255, 251, 0),  
                 0 0 0 600px rgb(249, 249, 230); 
 } 
-          
+#playPauseButton {
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+  } 
+  
+  button{
+    border-radius: 50px;
+    position: fixed;
+    top: 0;
+    float: right;
+  }  
+  
+  /* To make it responsive for computer screens, tablets, smart-phones etc. */
+@media screen and (max-width:900px) {
+    .column{
+        min-width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .column{
+        min-width: 100%;
+    }
+    .row{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    p{
+        font-size: 1.4rem;
+    }
+}
