@@ -1,96 +1,60 @@
 // // how to position images making an arc in html and css
 
 const button = document.getElementById("small-container");
+var points = document.getElementsByClassName("point");
+var myAudio = document.getElementById("myAudio");
+var playPauseButton = document.getElementById("playPauseButton");
 
-// button.onclick = function () {
-//   if (audio.paused) {
-//       audio.play();
-//   } else {
-//       audio.pause();
-//   }
-// };
+const TOTAL_WIDTH = window.innerWidth; // in px
+const IMAGE_WIDTH = 360; // width in px
 
-// for (var i = 0; i < points.length; i++) {
-//   var point = points[i];
-//   // Continue with the rest of the code
-// }
+  //get maximum left and maximum top for the image location
+const MAX_LEFT = TOTAL_WIDTH - IMAGE_WIDTH;
 
-// point.style.left = (x + 200) + 'px';
-// point.style.top = (200 - y) + 'px';
-// var points = document.getElementById('point');
+// Listen to button clicks using arrow function
+/**
+ * Calculate points positions making an arc
+ */
+const calculatePointsPositions = () => {
 
-// function ellipse(x) {
-//   // (x/2)^2 + y^2 = 100^2
-//   var ySquare = 10000 - (x / 2) * (x / 2)
-//   ySquare = Math.abs(ySquare)
-//   return Math.sqrt(ySquare)
-// }
+  // manually position images
+  points[0].style.left = 0 + "px";
+  points[0].style.top = 900 + "px";
 
-// $(document).ready(function(){
-//   $(".point").each(function(index) {
-//     var x = 200 * (8 * index / 18 - 1)
-//     var y = ellipse(x)
-  
-//     $(this).css('left', (x + 200) + 'px')
-//     $(this).css('top', (100 - y) + 'px')
-//   })
-// })
+  points[1].style.left = 1 / 5 * MAX_LEFT + "px";
+  points[1].style.top = 500 + "px";
 
+  points[2].style.left = 2 / 5 * MAX_LEFT + "px";
+  points[2].style.top = 300 + "px";
 
-  // context.beginPath();
-  // context.arc(x, y, radius, startAngle, endAngle, counterClockwise);
-  // context.lineWidth = 30;
+  points[3].style.left = 3 / 5 * MAX_LEFT + "px";
+  points[3].style.top = 300 + "px";
 
-  // // line color
-  // context.strokeStyle = 'red';
-  // context.stroke();
-  // // https://www.phind.com/search?cache=d7ai4u2bssq0yiw1dui06mo1
+  points[4].style.left = 4 / 5 * MAX_LEFT + "px";
+  points[4].style.top = 500 + "px";
 
-  // //
+  points[5].style.left = MAX_LEFT + "px";
+  points[5].style.top = 900 + "px";
+}
 
-  function arc(x) {
-    var ySquare = 10000 - (x ) * (x )
-    ySquare = Math.abs(ySquare)
-    return Math.sqrt(ySquare)
-  }
+// calculate points positions at init
+calculatePointsPositions();
 
-  $(document).ready(function(){
-    $(".point").each(function(index) {
-      var x = 200 * (10 * index / 12 - 2)
-      var y = arc(x)
-      
-      $(this).css('left', (x + 800) + 'px')
-      $(this).css('top', (500 - y) + 'px')
-    })
-  })
-   
+// recalculate at each resize of the window so that page is responsive
+window.onresize = () => {
+  calculatePointsPositions();
+}
 
-  // var canvas = document.getElementById('myCanvas');
-//   var context = canvas.getContext('2d');
-//   var x = canvas.width / 2;
-//   var y = canvas.height / 2;
-//   var radius = 75;
-//   var startAngle = .8 * Math.PI;
-//   var endAngle = 2.2 * Math.PI;
-//   var counterClockwise = false;
+ 
+// Listen to button clicks using arrow function
+function togglePlay() {
+ if (myAudio.paused) {
+   myAudio.play();
+   playPauseButton.textContent = "Pause";
+ } else {
+   myAudio.pause();
+   playPauseButton.textContent = "Play";
+ }
+};
 
-//   context.beginPath();
-//   context.arc(x, y, radius, startAngle, endAngle, counterClockwise);
-//   context.lineWidth = 30;
-
-//   // line color
-//   context.strokeStyle = 'blue';
-//   context.stroke();
-//   var canvas = document.getElementById('myCanvas');
-//   var context = canvas.getContext('2d');
-//   var x = canvas.width / 2;
-//   var y = canvas.height / 2;
-//   var radius = 75;
-//   var startAngle = 8 * Math.PI;
-//   var endAngle =2.3 * Math.PI;
-//   var counterClockwise = false;
-
-
-
-
-
+playPauseButton.addEventListener('click', togglePlay);

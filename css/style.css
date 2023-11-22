@@ -3,12 +3,26 @@
   margin: 0;
   padding: 0;
 }
-.container {
+/* .container {
     position: relative;
-  }
+} */
+/* point needs absolute position so that we can just place it where we want */
 .point {
-    position: absolute;
+  position: absolute;
 }
+
+/* point width and height manually set
+  REMEMBER: these numbers must match the javascript ones!
+  Alternatively you could set it all in javascript to avoid mistakes
+  You might want to add some padding so they are not right against the widnow
+*/
+.point img {
+  width: 300px;
+  height: 500px;
+  padding: 10px;
+  border-radius: 50px;
+}
+
 #bg {
   opacity: 0.8;
   position: absolute;
@@ -24,8 +38,6 @@ h1{
   background: -webkit-linear-gradient( #FFC300 , #f1ece3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
-
 }
 h2{
     font-size: 100px;
@@ -36,78 +48,23 @@ h2{
     display: flex;
 
 }
-#one{
-    width: 300px;
-    height:auto;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    rotate: -45deg;
 
-}
-#two{
-  width: 300px;
-  height:auto;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  rotate: -35deg;
-}
-#three{
-  width: 300px;
-  height:auto;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  rotate: -20deg;
-
-}
-#four{
-  width: 300px;
-  height:auto;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  
-
-}
-#five{
-  width: 300px;
-  height:auto;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  rotate: 20deg;
-
-}
-#six{
-  width: 300px;
-  height:auto;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  rotate: 45deg;
-
-}
-
-img:hover {
+.point:hover {
   box-shadow: 0 0 14px 14px rgb(245, 205, 3);
 }
 
-.audio {
+#playPauseButton {
   width: 100px;
   height: 100px;
+  font-size: 30px;
   cursor: pointer;
-  height: 100px;
   position: fixed;
+} 
+button{
+  border-radius: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-.smallcontainer{
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
-  width: 500px;
-  height: 80px;
-  border-radius: 50px;
-}
+

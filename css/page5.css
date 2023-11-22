@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 100px;
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+#bg{
+    opacity: 0.6;
+    position: fixed;
+    width: 100vw;
+    height: auto;
+
+}
+#container{
+    display: flex; 
+    position: relative;
+    inline-size: 1100px;
+    overflow-wrap: break-word;
+}
+p{
+    font-size: 50px;
+    font-family: 'Libre Baskerville', serif;
+    position: relative;
+   left: 100px;
+   top: 120px;
+}
+#main-image{
+    width: 40vw;
+    height: auto;
+    left: 200px;
+    position: absolute;
+
+}
+#image-container{
+    position: relative;
+    
+}
+#explosion{ 
+    width: 400px; 
+    height: 50px; 
+    position: relative;
+    left: 700px;
+    top:400px;
+    background: rgb(237, 234, 213); 
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgb(155, 3, 3),  
+                0 0 40px rgb(227, 51, 7),  
+                0 0 60px rgb(255, 123, 0),  
+                0 0 80px rgb(255, 225, 0), 
+                0 0 120px rgb(238, 255, 0),  
+                0 0 220px rgb(255, 242, 0), 
+                0 0 320px rgb(189, 194, 131); 
+    transition: 2s; 
+} 
+
+#explosion:hover { 
+    opacity: 0.8;
+    border-radius: 0.5;
+    box-shadow: 0 0 0 250px rgb(187, 5, 5),  
+                0 0 0 350px rgb(217, 17, 6), 
+                0 0 0 400px rgb(255, 132, 0), 
+                0 0 0 450px rgb(255, 204, 0),  
+                0 0 0 500px rgb(255, 196, 0),  
+                0 0 0 550px rgb(255, 251, 0),  
+                0 0 0 600px rgb(249, 249, 230); 
+} 
+          
