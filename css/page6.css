@@ -81,16 +81,16 @@ footer:hover{
 
   /* To make it responsive for computer screens, tablets, smart-phones etc. */
 @media screen and (max-width:900px) {
-    .column{
+    body{
         min-width: 50%;
     }
 }
 
 @media screen and (max-width: 500px){
-    .column{
+    .body{
         min-width: 100%;
     }
-    .row{
+    .img{
         flex-direction: column;
     }
     h1{

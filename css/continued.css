@@ -14,20 +14,19 @@ body{
    } */
 
    .wrapper {
-    width: 1500px;
-    margin: 0 auto;
+    height: auto;
     position: relative;
     text-align: center;
    }
    
    h1 {
-    font-size: 40rem;
+    font-size: 15rem;
     color: brown;
     text-transform: uppercase;
     font-weight: bold;
     position: relative;
     color: transparent;
-    margin-bottom: 0;
+
    }
    h1:before {
     content: "To be continued";
@@ -92,7 +91,7 @@ body{
     top: -8px;
     left: 30px;
     cursor: pointer;
-   }
+   } 
    #playPauseButton {
     width: 100px;
     height: 100px;
