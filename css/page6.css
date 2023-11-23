@@ -22,21 +22,22 @@ h1{
     overflow-wrap: break-word;
 }
 p{
-    font-size: 50px;
+    font-size: 2rem;
     font-family: 'Libre Baskerville', serif;
     position: relative;
    left: 100px;
    top: 120px;
 }
+.box {
+    width: 50%;
+    overflow-wrap: break-word;
+}
 #main-image{
-    width: 40vw;
+    width: 30vw;
     height: auto;
     left: 800px;
-    bottom: 300px;
-    position: relative;
-    display: flex;
-    float: right;
-    text-align: right;  
+    position: fixed;
+
 
 }
 #image-container{
@@ -79,24 +80,3 @@ footer:hover{
     left: 0;
   }
 
-  /* To make it responsive for computer screens, tablets, smart-phones etc. */
-@media screen and (max-width:900px) {
-    body{
-        min-width: 50%;
-    }
-}
-
-@media screen and (max-width: 500px){
-    .body{
-        min-width: 100%;
-    }
-    .img{
-        flex-direction: column;
-    }
-    h1{
-        font-size: 4rem;
-    }
-    p{
-        font-size: 1.4rem;
-    }
-}

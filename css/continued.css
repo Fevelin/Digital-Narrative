@@ -106,24 +106,3 @@ body{
     top: 0;
     float: right;
   }
-  /* To make it responsive for computer screens, tablets, smart-phones etc. */
-@media screen and (max-width:900px) {
-  .column{
-      min-width: 50%;
-  }
-}
-
-@media screen and (max-width: 500px){
-  .column{
-      min-width: 100%;
-  }
-  .row{
-      flex-direction: column;
-  }
-  h1{
-      font-size: 4rem;
-  }
-  p{
-      font-size: 1.4rem;
-  }
-}
