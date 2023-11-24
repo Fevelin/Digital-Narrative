@@ -1,16 +1,16 @@
-*{
+  *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    min-width: 100vw;
 }
 h1{
     font-size: 100px;
     position: relative;
     left: 50px;
     top: 50px;
-}
-body{
-    background-image: url(../Images/Storm.png);
 }
 #bg{
     opacity: 0.6;
@@ -21,39 +21,32 @@ body{
 }
 #container{
     display: flex; 
-    /* position: relative;
-    width: 40vw; */
+    position: relative;
+    width: 40vw;
 }
 p{
     font-size: 2rem;
     font-family: 'Libre Baskerville', serif;
-    /* position: relative;
-    left: 100px;
-   top: 120px;   */
+    position: relative;
+   left: 100px;
+   top: 120px;
 }
 .box {
-    /* inline-size: 100px; */
-    width: 50%;
+    inline-size: 1100px;
     overflow-wrap: break-word;
 }
 #main-image{
-    width: 45%;
-    /* height: auto; */
-    /* position: absolute; */
-
+    width: 30vw;
+    position: absolute;
+    height: auto;
+    
 }
 #image-container{
     width: 50%;
-
-    
-}
-
-#secondary-image{
-    width: 45%;
-    /* height: auto;
-    position: relative; */
-}
-
+    position: fixed;
+    left: 900px;
+    top: 200px 
+} 
 #playPauseButton {
     width: 100px;
     height: 100px;
