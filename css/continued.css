@@ -4,14 +4,8 @@
 }
 body{
     background-color: rgb(0, 0, 0);
-    /* clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 100%);
-    animation: broken 2s infinite; */
 }
-/* @keyframes broken {
-    0% { clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 100%); }
-    50% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
-    100% { clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 100%); }
-   } */
+
 
    .wrapper {
     height: auto;
