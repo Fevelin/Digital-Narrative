@@ -43,9 +43,9 @@ p{
 }
 #image-container{
     width: 50%;
-    position: fixed;
+    position: absolute;
     left: 900px;
-    top: 200px 
+    top: 100px 
 } 
 #playPauseButton {
     width: 100px;

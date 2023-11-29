@@ -36,12 +36,13 @@ p{
     width: 30vw;
     height: auto;
     left: 800px;
-    position: fixed;
+    position: absolute;
+
 
 
 }
 #image-container{
-    position: relative;
+    position: absolute;
     
 }
 
